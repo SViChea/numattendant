@@ -52,8 +52,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.network(
-              "https://sgs.num.edu.kh/wp-content/uploads/2024/07/LOGO-NUM-1.png",
+            Image.asset(
+              'assets/Logo copy.png',
               width: 190,
               height: 200,
               fit: BoxFit.cover,
@@ -91,8 +91,8 @@ class LoginPage extends StatelessWidget {
             children: const [],
           ),
           const SizedBox(height: 30),
-          Image.network(
-            "https://sgs.num.edu.kh/wp-content/uploads/2024/07/LOGO-NUM-1.png",
+          Image.asset(
+            'assets/Logo copy.png',
             width: 124,
             height: 124,
             fit: BoxFit.cover,
