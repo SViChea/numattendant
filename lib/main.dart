@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainBottomNav(), // Set AccountScreen as the home screen
+      home: WelcomeScreen(), // Set AccountScreen as the home screen
     );
   }
 }
@@ -233,7 +233,9 @@ class LoginPage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => HomeScreen()),
+                        MaterialPageRoute(
+                          builder: (context) => MainBottomNav(),
+                        ),
                       );
                     },
                     style: ElevatedButton.styleFrom(
